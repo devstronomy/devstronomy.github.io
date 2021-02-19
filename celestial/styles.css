@@ -2,6 +2,45 @@ html,
 body {
   margin: 0;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: black;
+}
+
+#loading-indicator {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51, 51, 51, 0.7);
+  z-index: 10;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+#textContainer {
+  position: fixed;
+  width: calc(100%);
+  color: white;
+}
+
+#header {
+  text-align: center;
+}
+
+#statusContainer {
+  vertical-align: top;
+  font-family: monospace;
 }
 
 .box {
@@ -17,27 +56,8 @@ body {
   margin: 6px;
 }
 
-#canvas {
-  width: 100vw;
-  height: 100vh;
-}
-
-#textContainer {
-  position: fixed;
-  width: calc(100%);
-  color: white;
-}
-
 b {
   color: #b2e7ff;
-}
-
-#header {
-  text-align: center;
-}
-
-#statusContainer {
-  vertical-align: top;
 }
 
 .ib {

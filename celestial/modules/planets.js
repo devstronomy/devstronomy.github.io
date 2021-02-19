@@ -5,9 +5,6 @@ import rawPlanets from "../data/planets.js";
 
 const color = (r, g, b) => ({ r, g, b });
 
-const statusEl = document.getElementById("status");
-const statusPlanet = "Mercury";
-
 const colors = {
   Mercury: color(224, 194, 150),
   Venus: color(145, 77, 19),
@@ -27,9 +24,7 @@ const planets = rawPlanets.map(
       (p.distanceFromSun * 10 ** 9) / AU, // convert from 10^6 km to AUs.
       p.diameter / 2,
       p.orbitalPeriod,
-      p.orbitalEccentricity,
-      colors[p.name],
-      p.name === statusPlanet ? statusEl : undefined // Ugly hardcoded. But for now OK.
+      colors[p.name]
     )
 );
 

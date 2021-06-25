@@ -1,6 +1,16 @@
 /* Tailwind CSS like tiny bundle. */
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .flex-grow {
   flex-grow: 1;
+}
+
+.w-full {
+  width: 100%;
 }
 
